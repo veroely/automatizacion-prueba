@@ -36,6 +36,7 @@ public class ProductoControllerTest {
 
     @Test
     void agregarProducto_CuandoSeLlama_DevuelveProducto() {
+        String prueba = "modificacion test";
         Producto producto = new Producto(1, "Producto 1", 10, 100.0);
         when(productoService.saveProducto(any(Producto.class))).thenReturn(producto);
 
